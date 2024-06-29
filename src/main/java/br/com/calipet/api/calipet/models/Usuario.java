@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name="usuario")
+@Table(name="Usuario")
 @Data
 @NoArgsConstructor
 public class Usuario {
@@ -16,16 +16,15 @@ public class Usuario {
     @Column(name="ID_usuario")
     private Integer idUsuario;
 
-    @Column(name = "ID_plano")
-    private Integer idPlano;
 
-    @Column(name = "email")
+
+    @Column(name = "Email")
     private String email;
 
-    @Column(name = "nome")
+    @Column(name = "Nome")
     private String nome;
 
-    @Column(name = "senha")
+    @Column(name = "Senha")
     private String senha;
 
 

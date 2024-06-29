@@ -1,29 +1,29 @@
 package br.com.calipet.api.calipet.models;
 
-
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "Plano")
+@Table(name="Informacao")
 @Data
 @NoArgsConstructor
-public class Plano {
+public class Informacao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="ID_plano")
-    private Integer idplano;
+    @Column(name="ID_Postagem")
+    private Integer IdPostagem;
 
-    @Column(name="Pratos_premiuns")
-    private String pratosPremiuns;
-
-    private String Nome;
+    private String Pet;
 
     private String Descricao;
 
-    private Float Valor;
+    private String Titulo;
 
-    private Float Descontos;
+    private String Imagem;
+
+    public boolean getIdInformacao() {
+        return false;
+    }
 }

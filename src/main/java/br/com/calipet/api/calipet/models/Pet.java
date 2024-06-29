@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 public class Pet {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_pet")
     private Integer idpet;
 

@@ -15,4 +15,8 @@ public class Prato {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Prato")
     private Integer idPrato;
+
+    private String IngredientePrincipal;
+
+    private String Premium;
 }

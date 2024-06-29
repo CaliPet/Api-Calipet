@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 @Entity
-@Table(name = "informacao_pessoal_contato")
+@Table(name = "Informacao_Pessoal_Contato")
 @Data
 @NoArgsConstructor
 public class InformacaoPessoal {
@@ -23,4 +23,14 @@ public class InformacaoPessoal {
 
     @Column (name = "Data_Inicio")
     private Date dataInicio;
+
+    private String Nome;
+
+    private Integer Numero;
+
+    private String CEP;
+
+    private  String Email;
+
+    private String Telefone;
 }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/informacaoPessoal")
+@RequestMapping("/informacaopessoal")
 public class InformacaoPessoalControllers {
 
     @Autowired
@@ -32,7 +32,7 @@ public class InformacaoPessoalControllers {
         if (informacaoPessoal.getIdInformacao()>0){
             return "Editado com sucesso";
         }
-        return "Funcionario não encontrado";
+        return "Informacao pessoal não encontrado";
     }
 
     @CrossOrigin
@@ -40,8 +40,8 @@ public class InformacaoPessoalControllers {
     public String delete(@RequestBody InformacaoPessoal informacaoPessoal){
         if (informacaoPessoal.getIdInformacao()>0){
             informacaoPessoalRepository.delete(informacaoPessoal);
-            return "Funcionario apagado";
+            return "Informacao pessoal apagado";
         }
-        return "Funcionario não encontrado";
+        return "Informacao pessoal não encontrado";
     }
 }
